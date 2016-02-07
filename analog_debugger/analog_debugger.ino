@@ -51,8 +51,6 @@ void loop() {
           {
               for (int k = 0; k < sizeof(keys[i])/sizeof(byte); ++k)
               {
-                Serial.print(k);
-                Serial.print("\n");
                 Keyboard.press(keys[i][k]);
               }
               delay(100);
